@@ -1,0 +1,15 @@
+package rpg.entities.enemies.enemyTypeD;
+
+import rpg.entities.enemies.Enemy;
+
+public class Lancero extends Enemy {
+
+    public Lancero(String name, int health) {
+        super(name, health);
+    }
+
+    @Override
+    public void attack() {
+        System.out.println(name + " ataca con una lanza.");
+    }
+}
