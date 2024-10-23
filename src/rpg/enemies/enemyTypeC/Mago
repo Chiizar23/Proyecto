@@ -1,0 +1,10 @@
+class Mago extends EnemigoBase {
+    public Mago(String nombre, int vida) {
+        super(nombre, vida);
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println(nombre + " lanza un hechizo de fuego.");
+    }
+}
