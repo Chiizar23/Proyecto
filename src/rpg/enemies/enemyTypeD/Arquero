@@ -1,0 +1,10 @@
+class Arquero extends EnemigoBase {
+    public Arquero(String nombre, int vida) {
+        super(nombre, vida);
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println(nombre + " dispara una flecha.");
+    }
+}
