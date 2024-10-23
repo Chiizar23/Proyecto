@@ -1,0 +1,15 @@
+package rpg.entities.enemies.enemyTypeC;
+
+import rpg.entities.enemies.Enemy;
+
+public class Bestia extends Enemy {
+
+    public Bestia(String name, int health) {
+        super(name, health);
+    }
+
+    @Override
+    public void attack() {
+        System.out.println(name + " ataca con sus garras.");
+    }
+}
