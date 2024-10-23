@@ -1,1 +1,28 @@
+abstract class EnemigoBase implements Enemigo {
+    protected String nombre;
+    protected int vida;
+
+    public EnemigoBase(String nombre, int vida) {
+        this.nombre = nombre;
+        this.vida = vida;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public void recibirDano(int cantidad) {
+        vida -= cantidad;
+        if (vida <= 0) {
+            System.out.println(nombre + " ha sido derrotado.");
+        } else {
+            System.out.println(nombre + " tiene " + vida + " puntos de vida restantes.");
+        }
+    }
+
+    @Override
+    public abstract void atacar(); // Método abstracto a ser implementado por subclases.
+}
 
