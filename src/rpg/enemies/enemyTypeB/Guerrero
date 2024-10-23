@@ -1,0 +1,10 @@
+class Guerrero extends EnemigoBase {
+    public Guerrero(String nombre, int vida) {
+        super(nombre, vida);
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println(nombre + " ataca con una espada.");
+    }
+}
